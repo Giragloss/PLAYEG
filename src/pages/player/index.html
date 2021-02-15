@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PLAYEG</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="inputPlayli" style="display: none;" class="inputPlayli">
+		<div class="blur"></div>
+		<div class="content">
+			<p>Playlist</p>
+			<input placeholder="https://www.youtube.com/watch?v=">
+			<img src="src/svg/paste.svg" onclick="b=document.querySelector('#inputPlayli input');b.value=clipboard.readText();" style="width: 14px;position: absolute;top: 65px;right: 11px;cursor: pointer;">
+			<button onclick="loader(true);addPlaylist();a=document.querySelector('#inputPlayli');a.setAttribute('style','display:none;');b=document.querySelector('#inputPlayli input');b.value=''">Submit</button>
+			<p class="close" onclick="a=document.querySelector('#inputPlayli');a.setAttribute('style','display:none;');b=document.querySelector('#inputPlayli input');b.value=''">X</p>
+		</div>
+	</div>
+	<div id="inputUrl" style="display: none;" class="inputUrl">
+		<div class="blur"></div>
+		<div class="content">
+			<p>Url</p>
+			<input placeholder="https://www.youtube.com/watch?v=">
+			<img src="src/svg/paste.svg"  onclick="b=document.querySelector('#inputUrl input');b.value=clipboard.readText();" style="width: 14px;position: absolute;top: 65px;right: 11px;cursor: pointer;">
+			<button onclick="loader(true);c=document.querySelector('#inputUrl input');addUrl(c.value);a=document.querySelector('#inputUrl');a.setAttribute('style','display:none;');b=document.querySelector('#inputUrl input');b.value=''">Submit</button>
+			<p class="close" onclick="a=document.querySelector('#inputUrl');a.setAttribute('style','display:none;');b=document.querySelector('#inputUrl input');b.value=''">X</p>
+		</div>
+	</div>
+
+	<div id="save" class="save" style="display:none;">
+		<div class="blur"></div>
+			<div class="content">
+				<div class="new">
+					<p style="margin-top: 13px;">Salvar Playlist</p>
+					<p style="position: relative;top: 22px;left: 21px;width: 56px;">Nome:</p>
+		  			<input class="name" placeholder="Ex: New-Playlist 1">
+		  			<p style="width: 81px;position: relative;top: 9px;left: 13px;font-size: 13px;">Url(opcional):</p>
+		  			<input class="url" style="" placeholder="https://www.youtube.com/watch?v=">
+		  			<button onclick="a=document.querySelector('#save .content .new .name').value;b=document.querySelector('#save .content .new .url').value;if(a){save(`${a}`,`${b}`)}else{alert('Digite o nome')};c=document.querySelector('#save');c.setAttribute('style','display:none;');d=document.querySelectorAll('#save .content .new input');for(key in d){d[key].value=''};e=document.querySelectorAll('#save .content .old input');for(key in e){e[key].value=''};f=document.querySelector('#save .content .old .name');f.innerHTML=''">Salvar</button>
+				</div>
+
+				<hr style="position: relative;top: 32px;color: #fff;margin-top: 12px;margin-bottom: 25px;">
+
+				<div class="old">
+					<p style="margin-top: 13px;">Sobrescrever Playlist</p>
+					<p style="position: relative;top: 22px;left: 15px;width: 56px;">Playlist:</p>
+		  			
+					<select name="select" class="name"></select>
+					<p style="position: relative;top: 5px;right: 4px;width: 158px;font-size: 13px;margin-top: 7px;margin-bottom: -13px;">Novo nome(opcional):</p>
+					<input class="name-new" placeholder="Ex: Playlist 1">
+		  			<p style="width: 81px;position: relative;top: 9px;left: 13px;font-size: 13px;">Url(opcional):</p>
+		  			<input class="url" style="" placeholder="https://www.youtube.com/watch?v=">
+		  			<button onclick="a=document.querySelector('#save .content .old .name');b=document.querySelector('#save .content .old .url').value;c=document.querySelector('#save .content .old .name-new').value;if(!c){c = a.children[parseInt(a.value)+1].textContent};if(a != 'none'){sobesc(a.value,b,c)}else{alert('Selecione uma playlist')};d=document.querySelector('#save');d.setAttribute('style','display:none;');e=document.querySelector('#save .content .old .name');e.innerHTML='';f=document.querySelectorAll('#save .content .new input');for(key in f){f[key].value=''};g=document.querySelectorAll('#save .content .old input');for(key in g){g[key].value=''};h=document.querySelector('#save .content .old .name');h.innerHTML=''">Salvar</button>
+				</div>
+				
+				<p class="close" onclick="a=document.querySelector('#save');a.setAttribute('style','display:none;');b=document.querySelectorAll('#save .content .new input');for(key in b){b[key].value=''};c=document.querySelectorAll('#save .content .old input');for(key in c){c[key].value=''};d=document.querySelector('#save .content .old .name');d.innerHTML=''">X</p>
+	  		</div>
+	</div>
+
+	<div class="load" style="display: none;">
+		<div class="blur"></div>
+		<div class="content">
+			<h2>Playlists</h2>
+			<div class="lists">
+				<ul>
+					
+				</ul>
+			</div>
+			<p class="close" onclick="a=document.querySelector('.load');a.setAttribute('style','display:none;');b=document.querySelector('.load .content div ul');b.innerHTML='';loadCounts=-1;aA=[];loadCountsReload=-1">X</p>
+		</div>
+	</div>
+
+	<div id="fila" class="fila" style="display: none;">
+		<p style="margin-top: 4px;">Fila</p>
+		<ul style="overflow-y: auto;height: 225px;"></ul>
+		<p class="close" onclick="a=document.querySelector('.fila');a.setAttribute('style','display:none;');b=document.querySelector('.fila ul');b.innerHTML=''">X</p>
+	</div>
+
+
+	<div id="player" class="player">
+		<div id="info" class="info">
+			<img>
+
+			<h3>Playeg - Seu Player de Audio para Videos do Youtube</h3>
+			<h4>Playeg</h4>
+
+			<div class="loader"></div>
+		</div>
+
+		<div id="volum" class="volum">
+			<input type="range" min="0" class="vol" id="vol" onchange="a=document.querySelector('#volum input').value;setVolumAudio(a)" style="" max="100" value="">	
+			<img src="src/svg/volume-Up.svg">
+		</div>
+
+		<div id="timer" class="timer">
+			<p id="inicio" class="inicio">00:00</p>
+			<p id="fim" class="fim">00:00</p>
+
+			<input type="range" min="0" max="0" class="slider" id="seekbar" value="" onchange="setTimeAudio()">
+		</div>
+		
+		<div id="btns" class="btns">
+			<div class="repeat" onclick="a=document.querySelector('.btns .repeat .true');b=a.style.display;if(b == 'none'){a.setAttribute('style','display:block;');}else{a.setAttribute('style','display: none;')}">
+				<img src="src/svg/repeat.svg">
+				<div class="true" style="display: none;"></div>
+			</div>
+			<div class="nxt-l" onclick="proxMusic('ant')">
+				<img src="src/svg/nxt.svg">
+			</div>
+			<div class="play" onclick="playPauseMusic()">
+	  			<img class="svg-play" src="src/svg/play.svg">
+	  			<img class="pause" style="display: none;" src="src/svg/pause.svg">
+			</div>
+			<div class="nxt-r" onclick="proxMusic()">
+				<img src="src/svg/nxt.svg">
+			</div>
+			<div class="aleatory" onclick="a=document.querySelector('.btns .aleatory .true');b=a.style.display;if(b == 'none'){a.setAttribute('style','display:block;');}else{a.setAttribute('style','display: none;')}">
+				<img src="src/svg/aleatory.svg">
+				<div class="true" style="display: none;"></div>
+			</div>
+		</div>
+
+		<div id="playlist" class="playlist">
+
+			<div class="cab">
+				<img src="src/svg/save.svg" onClick="a=document.querySelector('#save');a.setAttribute('style','display: block;');sobescItens();b=document.querySelector('#save .content .old .name');c=document.createElement('option');c.setAttribute('value','');c.textContent='';b.appendChild(c)" style="width: 17px;left: -132px !important;position: relative;top: 10px;z-index: 1;">
+
+				<img src="src/svg/load.svg" onClick="a=document.querySelector('.load');a.setAttribute('style','display: block;');load()" style="width: 21px;left: -128px !important;position: relative;top: 9.8px;z-index: 1;">
+
+				<img src="src/svg/playlist.svg" onClick="a=document.querySelector('.fila ul');a.innerHTML='';b=document.querySelector('.fila');b.setAttribute('style','display: block;');filaRender()" style="width: 20px;left: -125px !important;position: relative;top: 12.8px;z-index: 1;">
+
+				<p>Playlist</p>
+
+				<img src="src/svg/delete.svg" onClick="reset()" style="width: 13px;margin-bottom: 5.5px;margin-right: 5px;">
+
+				<img src="src/svg/addMusic.svg" onClick="a=document.querySelector('#inputUrl');a.setAttribute('style','display: block;');" style="width: 14px;margin-bottom: 5.3px;margin-right: 3px;">
+
+				<img src="src/svg/AddFila.svg" onClick="a=document.querySelector('#inputPlayli');a.setAttribute('style','display: block;');">
+			</div>
+
+			<ul>
+			</ul>
+		</div>
+
+	</div>
+
+	<audio ontimeupdate="seekBarUptade();init()" onended="proxMusic()" onpause="playPauseMusic('pause')" onplay="playPauseMusic('play')"></audio>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "win64": "electron-packager . myApp --icon './src/icon/icon.ico' --platform=win32 --arch=x64",
+    "win32": "electron-packager . myApp --icon './src/icon/icon.ico' --platform=win32 --arch=ia32"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "delay": "^5.0.0",
+    "electron": "^11.2.3",
+    "ytdl-core": "^4.4.5",
+    "ytpl": "^2.0.5"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.2.0"
+  }
+}
