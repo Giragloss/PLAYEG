@@ -61,7 +61,7 @@ CTRL + LEFT
 
 Para que quando a música acabe ela repita aperte esse botão, quando ativo ele ficara com essa bolinha branca aperte de novo e será desativada a função de repetir e a bolinha ira sair
 
-4. Aleatorio
+4. Aleatório
 
 ![](https://user-images.githubusercontent.com/54596991/107914968-3e60fb80-6f42-11eb-8e7a-920fdf347da7.png)
 ![](https://user-images.githubusercontent.com/54596991/107914849-09ed3f80-6f42-11eb-9b32-1ba70fc302ca.png)
@@ -75,7 +75,7 @@ Aperte esse botão para que as músicas passem aleatoriamente, da mesma forma qu
 ![](https://user-images.githubusercontent.com/54596991/107915236-e676c480-6f42-11eb-9a3a-901eeae71532.png)
 ![](https://user-images.githubusercontent.com/54596991/107915455-466d6b00-6f43-11eb-8c0c-1f2bcd5295d7.png)
 
-Mexa a barra pra cima para aumentar o volume e pra baixo para abaixar o volumr, Atalhos:
+Mexa a barra pra cima para aumentar o volume e pra baixo para abaixar o volume, Atalhos:
 
 CTRL + DOWN
 ![](https://user-images.githubusercontent.com/54596991/107915774-ddd2be00-6f43-11eb-85e1-c1b45b8ed2df.png)
@@ -122,13 +122,13 @@ O nome do autor será o nome do canal que postou o vídeo no youtube
 
 ### Playlist
 
-Nessa parte teremos todas as musicas, ou videos, que adicionarmos ao Playeg tanto por uma playlist tanto colocando musica por musica
+Nessa parte teremos todas as musicas, ou vídeos, que adicionarmos ao Playeg tanto por uma playlist tanto colocando musica por musica
 
 ![](https://user-images.githubusercontent.com/54596991/108017792-87718800-6ff4-11eb-9529-bc3f5c75bda8.png)
 
 1. Lista de musicas
 
-Aqui temos a lista com todas as musicas,como no exemplo abaixo:
+Aqui temos a lista com todas as musicas, como no exemplo abaixo:
 
 ![](https://user-images.githubusercontent.com/54596991/108018005-3ca44000-6ff5-11eb-8e72-55e34acbefcb.png)
 
@@ -140,15 +140,15 @@ Cada musica dentro da lista contem algumas informações que são:
 
 ![](https://user-images.githubusercontent.com/54596991/108018218-d966dd80-6ff5-11eb-85a5-4ac50939e7db.png)
 
-- Thumb: Thumbnail do video
+- Thumb: Thumbnail do vídeo
 
 ![](https://user-images.githubusercontent.com/54596991/108018409-69a52280-6ff6-11eb-960d-aadfbdb495a6.png)
 
-- Duração: Como o nome ja diz é a duração do video aproximadamente
+- Duração: Como o nome já diz é a duração do vídeo aproximadamente
 
 ![](https://user-images.githubusercontent.com/54596991/108018516-bdb00700-6ff6-11eb-8b40-361ebbfa7598.png)
 
-- Titulo: O titulo do video
+- Titulo: O titulo do vídeo
 
 ![](https://user-images.githubusercontent.com/54596991/108018619-05cf2980-6ff7-11eb-9c16-87974260a9f1.png)
 
@@ -162,6 +162,92 @@ Juntos com essas informações tbm temos três funcionalidades:
 
 ![](https://user-images.githubusercontent.com/54596991/108019250-98bc9380-6ff8-11eb-9400-5a056c0031a9.gif)
 
-- Adicionar a fila: Como o proprio nome ja diz adiciona uma musica a fila de reprodução, como no exemplo abaixo:
+- Adicionar a fila: Como o próprio nome já diz adiciona uma musica a fila de reprodução, como no exemplo abaixo:
 
 ![](https://user-images.githubusercontent.com/54596991/108019458-0cf73700-6ff9-11eb-98e0-f9729bb29e4b.gif)
+
+2. Botões 
+
+Dentro de playlist nos também temos alguns botões com funcionalidades especificas que são:
+
+![](https://user-images.githubusercontent.com/54596991/108020806-eb4b7f00-6ffb-11eb-8197-628db22e08df.png)
+
+- Adicionar playlist:
+
+![](https://user-images.githubusercontent.com/54596991/108020982-572de780-6ffc-11eb-885c-41846d028631.png)
+
+Esse botão serve para adicionar uma playlist do youtube, quando clicarmos nesse botão aparecera um pop-up:
+
+![](https://user-images.githubusercontent.com/54596991/108021093-94927500-6ffc-11eb-9473-1a364bcb36b6.png)
+
+Dentro desse pop-up você pode digitar a url da playlist ou clicar nesse botão com ícone de prancheta para colar da sua área de transferência direto para o campo, como no exemplo:
+
+![](https://user-images.githubusercontent.com/54596991/108021412-46ca3c80-6ffd-11eb-956a-7cc61622b5d0.gif)
+
+Após colocar a url basta clicar em "Submit" que a playlist será carregada, como no exemplo:
+
+![](https://user-images.githubusercontent.com/54596991/108021607-a88aa680-6ffd-11eb-9a36-591c97cd2af1.gif)
+
+OBS: Está rolando um bug, que ainda vou concertar, que quando vc coloca uma url de playlist vindo de outro domínio do youtube ele não carrega as musica. Ex:
+
+Vc coloca essa url: https://youtu.be/playlist?list=PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3
+
+Dai fica carregando infinitamente e não funciona, então pra que isso não ocorra copie somente a id da playlist. Ex:
+
+Url: https://youtu.be/playlist?list=PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3
+
+Id:PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3
+
+A id da playlist sempre fica entre '?list=' e '&',As vezes depois do id não tem nada como no exemplo acima dai só copiar tudo partir de '?list='. Ex:
+
+https://youtu.be/playlist?list=PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3
+
+PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3
+
+https://www.youtube.com/watch?list=PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3&v=playlist&feature=youtu.be
+
+https://www.youtube.com/watch?list= Id:"PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3" &v=playlist&feature=youtu.be
+
+Se você não entendeu e esta tendo esse problema espere um pouco que na próxima atualização isso será corrigido
+
+- Adicionar Musica
+
+![](https://user-images.githubusercontent.com/54596991/108023869-42545280-7002-11eb-8209-b357a0537d13.png)
+
+Esse é bem semelhante ao anterior mas invés de colocar uma playlist esse serve pra adicionar um único vídeo, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108023917-5435f580-7002-11eb-8731-23e3890f1602.gif)
+
+- Reset
+
+![](https://user-images.githubusercontent.com/54596991/108024087-ad9e2480-7002-11eb-91e2-df07400a49c4.png)
+
+Ao clicar nesse toda a nossa playlist e deletada do app mas a musica que esta tocando no momento continua, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108024405-492f9500-7003-11eb-815a-54f06f42950f.gif)
+
+-Fila
+
+![](https://user-images.githubusercontent.com/54596991/108024495-6bc1ae00-7003-11eb-889f-e241dfcf3e70.png)
+
+Ao clicar nesse botão aparecera um pop-up em cima da playlist mostrando quais vídeos foram adicionadas a fila de reprodução, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108024711-d541bc80-7003-11eb-89f1-9bdb48846bb3.gif)
+
+Quando a musica que esta tocando passar pra próxima na fila se você abrir e fechar dnv a fila ele sairá de lá, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108025061-8a747480-7004-11eb-9c07-20ef05512e7b.gif)
+
+Dentro nos temos duas funcionalidades:
+
+Remover: remove musica da fila, exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108025214-db846880-7004-11eb-9743-ed0979ad550e.gif)
+
+Play: Toca a musica que vc escolher, exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108025299-ff47ae80-7004-11eb-8ca4-d63569f4b82a.gif)
+
+- Save/Sobrescrever
+
+![](https://user-images.githubusercontent.com/54596991/108025521-5ea5be80-7005-11eb-9b28-1ef192c01bb8.png)
