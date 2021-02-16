@@ -119,3 +119,49 @@ O título será exatamente o título do vídeo lá do youtube
 O nome do autor será o nome do canal que postou o vídeo no youtube
 
 ![](https://user-images.githubusercontent.com/54596991/108016917-6740c980-6ff2-11eb-884e-212b9d921ae5.png)
+
+### Playlist
+
+Nessa parte teremos todas as musicas, ou videos, que adicionarmos ao Playeg tanto por uma playlist tanto colocando musica por musica
+
+![](https://user-images.githubusercontent.com/54596991/108017792-87718800-6ff4-11eb-9529-bc3f5c75bda8.png)
+
+1. Lista de musicas
+
+Aqui temos a lista com todas as musicas,como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108018005-3ca44000-6ff5-11eb-8e72-55e34acbefcb.png)
+
+Cada musica dentro da lista contem algumas informações que são:
+
+![](https://user-images.githubusercontent.com/54596991/108018157-a45a8b00-6ff5-11eb-9e66-41b058ecbf6a.png)
+
+- Index: Numero da musica dentro da playlist
+
+![](https://user-images.githubusercontent.com/54596991/108018218-d966dd80-6ff5-11eb-85a5-4ac50939e7db.png)
+
+- Thumb: Thumbnail do video
+
+![](https://user-images.githubusercontent.com/54596991/108018409-69a52280-6ff6-11eb-960d-aadfbdb495a6.png)
+
+- Duração: Como o nome ja diz é a duração do video aproximadamente
+
+![](https://user-images.githubusercontent.com/54596991/108018516-bdb00700-6ff6-11eb-8b40-361ebbfa7598.png)
+
+- Titulo: O titulo do video
+
+![](https://user-images.githubusercontent.com/54596991/108018619-05cf2980-6ff7-11eb-9c16-87974260a9f1.png)
+
+Juntos com essas informações tbm temos três funcionalidades:
+
+- Play: Se clicarmos na Thumb da musica iniciara um carregamento e a musica ira começar, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108019127-44b1af00-6ff8-11eb-9c26-00c71074243c.gif)
+
+- Remove: Remove a musica da playlist, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108019250-98bc9380-6ff8-11eb-9400-5a056c0031a9.gif)
+
+- Adicionar a fila: Como o proprio nome ja diz adiciona uma musica a fila de reprodução, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108019458-0cf73700-6ff9-11eb-98e0-f9729bb29e4b.gif)
