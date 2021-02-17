@@ -208,13 +208,13 @@ https://www.youtube.com/watch?list=PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3&v=playlist
 
 https://www.youtube.com/watch?list= Id:"PLBu53HxlKZKqUN0n6PGyvbkZVp13Fs6v3" &v=playlist&feature=youtu.be
 
-Se você não entendeu e esta tendo esse problema espere um pouco que na próxima atualização isso será corrigido
+Se você não entendeu e está tendo esse problema espere um pouco que na próxima atualização isso será corrigido
 
 - Adicionar Musica
 
 ![](https://user-images.githubusercontent.com/54596991/108023869-42545280-7002-11eb-8209-b357a0537d13.png)
 
-Esse é bem semelhante ao anterior mas invés de colocar uma playlist esse serve pra adicionar um único vídeo, como no exemplo abaixo:
+Esse é bem semelhante ao anterior, mas invés de colocar uma playlist esse serve para adicionar um único vídeo, como no exemplo abaixo:
 
 ![](https://user-images.githubusercontent.com/54596991/108023917-5435f580-7002-11eb-8731-23e3890f1602.gif)
 
@@ -251,3 +251,73 @@ Play: Toca a musica que vc escolher, exemplo abaixo:
 - Save/Sobrescrever
 
 ![](https://user-images.githubusercontent.com/54596991/108025521-5ea5be80-7005-11eb-9b28-1ef192c01bb8.png)
+
+Ao apertar esse botão ira aparecer esse pop-up:
+
+![](https://user-images.githubusercontent.com/54596991/108156144-e69bcf00-70be-11eb-98ea-8ea28b4f1b8e.png)
+
+Dentro desse pop-up temos duas funcionalidades que são:
+
+Salvar: Aqui nos salvamos a playlist localmente para facil acesso, então inves de escrever a url toda vez que quiser ouvir algo basta somente ir em load e carregar sua playlist com apenas alguns clicks, para salvar basta colocar o nome da playlist e apertar em salvar, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108156934-5f4f5b00-70c0-11eb-9222-c320635fafb2.gif)
+
+Mas vale lembrar que a playlist tem que estar carregada no Playeg se não a função não funcionara, como exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108157155-d4229500-70c0-11eb-995c-65c2e606e1a7.gif)
+
+Para funcionar carregue a playlist antes como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108157274-1ba92100-70c1-11eb-9665-abcd93414162.gif)
+
+Há tbm uma opção adicional que serve para atualizar a playlist, aonde vc pode criar uma playlist ou utlizar uma já criada no youtube e quando uma musica for adicionada ou removida dessa playlist vc não precise remover e salvar dnv a playlist para carregar as novas atualizações, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108157661-0bde0c80-70c2-11eb-9e11-e974e9e9e4f4.gif)
+
+No Exemplo acima eu removi algumas musicas e quando atualizei dentro de load a playlist pegou as musicas da url que passei atualizando a playlist salvas com essas musicas fazendo com que minha playlist que tinha 2 musicas ficasse com 5, outro exemplo:
+
+![](https://user-images.githubusercontent.com/54596991/108157873-83ac3700-70c2-11eb-9199-7cdfe712a3f1.gif)
+
+Ja nesse ele pegou as musicas da url e retirou as antigas colocando essas novas
+
+Vale lembrar que se vc adicionar varias musicas pela opção de musica por musica tbm serão salvas, então vc pode adicionar suas musicas favoritas e salvar aqui mesmo sem precisar criar a playlist no youtube
+
+Outra obs e que se vc modificar sua playlist removendo ou adicionando musicas e passar uma url e mandar atualizar vc perdera suas alterações e a playlist vai ficar igual a da url que vc passou
+
+Sobrescrever: Aqui nos podemos sobrescrever uma playlist já criada como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108158441-adb22900-70c3-11eb-840a-2a4cfea67be8.gif)
+
+Nos podemos passar 3 informações para sobrescrever:
+
+A playlist que queremos sobrescrever
+
+Um novo nome pra playlist, se deixarmos em branco ele ficara com o mesmo nome, Como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108158628-17cace00-70c4-11eb-9496-3d2c249d89d5.gif)
+
+E uma nova url para a playlist, se deixarmos em branco ele deixara a playlist sem url, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108158985-d7b81b00-70c4-11eb-9465-8bbbb6aa3b31.gif)
+
+- Load
+
+![](https://user-images.githubusercontent.com/54596991/108159307-7e9cb700-70c5-11eb-9e11-68b6620f77c8.png)
+
+Falei um pouco dela na função de save pois as duas estão interligadas essa função serve para carregar as playlist que vc tem salvo, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108159718-5497c480-70c6-11eb-9704-8d5a850a97a2.gif)
+
+Dentro dela nos podemos fazer três coisas:
+
+Carregar: Aqui nos carregamos uma determinada playlist como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108159836-9d4f7d80-70c6-11eb-94c7-a828ef1321bc.gif)
+
+Apagar: Aqui nos apagamos uma playlist, como no exemplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108159952-ddaefb80-70c6-11eb-9a6f-88726f4a1507.gif)
+
+Atualizar: Aqui nos atualizamos uma playlist conforme sua url, como já foi mostrado em salvar e como no exeplo abaixo:
+
+![](https://user-images.githubusercontent.com/54596991/108160077-1d75e300-70c7-11eb-95f5-41a9470c3198.gif)
