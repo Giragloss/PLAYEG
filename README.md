@@ -321,3 +321,26 @@ Apagar: Aqui nos apagamos uma playlist, como no exemplo abaixo:
 Atualizar: Aqui nos atualizamos uma playlist conforme sua url, como já foi mostrado em salvar e como no exeplo abaixo:
 
 ![](https://user-images.githubusercontent.com/54596991/108160077-1d75e300-70c7-11eb-95f5-41a9470c3198.gif)
+
+### Minimizar
+
+Quando a tela é minimizada e o ícone dele ira para a bandeja e a tela será fechada mas o aplicativo não é fechado continuando tocando as musicas e vc podendo controlar a musica pelos atalhos no teclado, para a tela voltar click com o botão direito no ícone da bandeja e click em mostrar, já para fechar o aplicativo quando ele estiver assim click com o botão direito no ícone da bandeja e click em fechar
+
+## Requisitos Para Modificar
+
+Os requisitos para modificar o código são os seguintes:
+
+- Pc Windows 64 bits ou 32 bits
+- NodeJs (https://nodejs.org)
+
+E só
+
+## Módulos Utilizados
+
+Aqui eu utilizei os seguintes módulos:
+
+- Electron (https://www.electronjs.org/)
+- delay (https://www.npmjs.com/package/delay)
+- ytdl-core (https://www.npmjs.com/package/ytdl-core)
+- ytpl (https://www.npmjs.com/package/ytpl)
+- fs (https://nodejs.org/api/fs.html)
