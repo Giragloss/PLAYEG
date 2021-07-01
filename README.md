@@ -8,7 +8,7 @@ Playeg é um player de áudio para vídeos do youtube, criado utilizando electro
 ![](https://user-images.githubusercontent.com/54596991/108255175-ab3ee600-713a-11eb-8152-d89450cdb7b1.png)
 
 ## Instalação
-Para utilização basta ir até a aba releses desse repositório baixar a última versão para seu sistema operacional descompactar o arquivo .zip e executar o arquivo Playeg.exe, e pronto sem precisar de configuração nem nada do tipo
+Para utilização basta ir até a aba releses desse repositório baixar a última versão para seu sistema operacional descompactar o arquivo .zip e executar o arquivo myApp.exe, e pronto sem precisar de configuração nem nada do tipo
 
 ![](https://user-images.githubusercontent.com/54596991/107912135-b4626400-6f3c-11eb-8f02-3e6b929b93f9.png)
 
